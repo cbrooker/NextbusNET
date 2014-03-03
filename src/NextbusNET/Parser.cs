@@ -100,7 +100,9 @@ namespace NextbusNET
                                                            DirTag = x.Attr("dirTag"),
                                                            Vehicle = x.Attr("vehicle"),
                                                            Block = x.Attr("block"),
-                                                           TripTag = x.Attr("tripTag")
+                                                           TripTag = x.Attr("tripTag"),
+                                                           Title = x.Parent.Attr("title"),
+                                                           ShortTitle = x.Parent.Parent.Attr("routeTitle")
                                                        }).ToList();
 
             return predictions;

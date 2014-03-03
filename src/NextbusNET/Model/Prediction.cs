@@ -65,5 +65,9 @@ namespace NextbusNET.Model
             return string.Format("Vehicle: {0}, TripTag: {1}, Seconds: {2}, DirTag: {3}", Vehicle, TripTag, Seconds,
                                  DirTag);
         }
+
+        public string Title { get; set; }
+        public string ShortTitle { get; set; }
+
     }
 }
